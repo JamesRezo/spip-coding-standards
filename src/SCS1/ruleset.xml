@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<ruleset name="SCS1">
+    <description>SPIP Coding Standard</description>
+
+    <rule ref="PSR1" >
+        <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace" />
+        <exclude name="PSR1.Files.SideEffects.FoundWithSymbols" />
+        <exclude name="PSR1.Methods.CamelCapsMethodName.NotCamelCaps" />
+        <exclude name="PSR1.Classes.ClassDeclaration.MultipleClasses" />
+    </rule>
+
+    <!-- Appliquer PSR-2 moins nos exceptions -->
+    <rule ref="PSR2" >
+        <!-- Désactiver la vérification sur les noms de classes/fonctions -->
+        <exclude name="Squiz.Classes.ValidClassName" />
+        <!-- Désactiver la vérification sur l'indentation -->
+        <exclude name="Generic.WhiteSpace.ScopeIndent" />
+        <exclude name="Generic.WhiteSpace.DisallowTabIndent" />
+        <!-- Désactiver la vérification sur les accolades -->
+        <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" />
+        <exclude name="PSR2.Classes.ClassDeclaration.OpenBraceNewLine" />
+        <exclude name="PSR2.Classes.PropertyDeclaration" />
+        <exclude name="Generic.NamingConventions.UpperCaseConstantName" />
+        <exclude name="PSR2.ControlStructures.SwitchDeclaration.TerminatingComment" />
+    </rule>
+
+    <rule ref="PSR2.Methods.MethodDeclaration.Underscore" >
+        <severity>0</severity>
+    </rule>
+
+    <!-- Tabulations pour l'indentation -->
+    <arg name="tab-width" value="4"/>
+    <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+    <rule ref="Generic.WhiteSpace.ScopeIndent">
+        <properties>
+            <property name="indent" value="4"/>
+            <property name="tabIndent" value="true"/>
+        </properties>
+    </rule>
+
+   <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="120"/>
+            <property name="absoluteLineLimit" value="0"/>
+        </properties>
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Internal.NoCodeFound">
+        <severity>0</severity>
+    </rule>
+
+    <!-- Accolades -->
+    <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>
+    <rule ref="Generic.ControlStructures.InlineControlStructure" />
+    <rule ref="Squiz.ControlStructures.ControlSignature" />
+    <rule ref="Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace">
+        <severity>0</severity>
+    </rule>
+    <rule ref="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace">
+        <severity>0</severity>
+    </rule>
+
+    <!-- Guillemets doubles -->
+    <rule ref="Squiz.Strings.DoubleQuoteUsage"/>
+    <rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar">
+        <severity>0</severity>
+    </rule>
+
+    <arg name="extensions" value="php"/>
+</ruleset>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<ruleset name="SPIP40">
+    <description>Coding rules for SPIP 4.0</description>
+
+    <rule ref="SCS1"/>
+
+    <rule ref="PHPCompatibility"/>
+    <config name="testVersion" value="7.3-8.0"/>
+</ruleset>

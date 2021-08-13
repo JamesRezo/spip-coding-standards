@@ -1,0 +1,25 @@
+{
+    "name": "spip/coding-standards",
+    "description": "SPIP Coding Standards",
+    "type": "phpcodesniffer-standard",
+    "keywords": ["spip", "phpcs"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JamesRezo",
+            "email": "james@rezo.net"
+        }
+    ],
+    "require": {
+        "squizlabs/php_codesniffer": "^3.6",
+        "phpcompatibility/php-compatibility": "^9.3"
+    },
+    "suggest" : {
+      "dealerdirect/phpcodesniffer-composer-installer": "^0.5 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically."
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
+        }
+    }
+}
