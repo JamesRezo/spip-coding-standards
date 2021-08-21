@@ -8,6 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2021-08-21
+
+### Added
+
+- `SPIP41` PHP Compatibility Ruleset, including SCS1, for SPIP 4.1
+
+### Changed
+
+- `SCS1` Based on PSR-12 + short array syntax
+
 ## [1.0.0] - 2021-08-13
 
 ### Added
