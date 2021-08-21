@@ -9,8 +9,8 @@
         <exclude name="PSR1.Classes.ClassDeclaration.MultipleClasses" />
     </rule>
 
-    <!-- Appliquer PSR-2 moins nos exceptions -->
-    <rule ref="PSR2" >
+    <!-- Appliquer PSR-12 moins nos exceptions -->
+    <rule ref="PSR12" >
         <!-- Désactiver la vérification sur les noms de classes/fonctions -->
         <exclude name="Squiz.Classes.ValidClassName" />
         <!-- Désactiver la vérification sur l'indentation -->
@@ -66,6 +66,9 @@
     <rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar">
         <severity>0</severity>
     </rule>
+
+    <!-- Tableaux -->
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax" />
 
     <arg name="extensions" value="php"/>
 </ruleset>
