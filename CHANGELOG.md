@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2021-08-24
+
+### Added
+
+- `snake_case` Detection Utilies + Unit Tests
+- Sniffs `SCS1.NamingConventions.SnakeCaseFunctionName` and `SCS1.NamingConventions.SnakeCaseVariableName` for SCS1
+  - Taking account of special functions like `balise_*`
+  - Class methods excluded
+
 ## [1.1.0] - 2021-08-21
 
 ### Added
