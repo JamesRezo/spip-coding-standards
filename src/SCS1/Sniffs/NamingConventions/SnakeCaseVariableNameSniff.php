@@ -20,7 +20,8 @@ class SnakeCaseVariableNameSniff extends AbstractVariableSniff
         }
 
         $objOperator = $phpcsFile->findNext([T_WHITESPACE], ($stackPtr + 1), null, true);
-        if ($tokens[$objOperator]['code'] === T_OBJECT_OPERATOR
+        if (
+            $tokens[$objOperator]['code'] === T_OBJECT_OPERATOR
             || $tokens[$objOperator]['code'] === T_NULLSAFE_OBJECT_OPERATOR
         ) {
             // Check to see if we are using a variable from an object.
@@ -42,11 +43,11 @@ class SnakeCaseVariableNameSniff extends AbstractVariableSniff
                         $suggestedName = SnakeCase::toSnakeCase($originalVarName);
                         $error = 'Member variable "%s" is not in valid snake_case format (Suggested name: %s)';
                         $data  = [$originalVarName, $suggestedName];
-                        $phpcsFile->addError($error, $var, 'MemberNotSnakeCase', $data);
+                        $phpcsFile->addWarning($error, $var, 'MemberNotSnakeCase', $data);
                     }
-                }//end if
-            }//end if
-        }//end if
+                } //end if
+            } //end if
+        } //end if
 
         $objOperator = $phpcsFile->findPrevious(T_WHITESPACE, ($stackPtr - 1), null, true);
         if ($tokens[$objOperator]['code'] === T_DOUBLE_COLON) {
@@ -61,7 +62,7 @@ class SnakeCaseVariableNameSniff extends AbstractVariableSniff
                 $suggestedName = SnakeCase::toSnakeCase($varName);
                 $error = 'Member variable "%s" is not in valid snake_case format (Suggested name: %s)';
                 $data  = [$tokens[$stackPtr]['content'], $suggestedName];
-                $phpcsFile->addError($error, $stackPtr, 'MemberNotSnakeCase', $data);
+                $phpcsFile->addWarning($error, $stackPtr, 'MemberNotSnakeCase', $data);
             }
 
             return;
@@ -82,7 +83,7 @@ class SnakeCaseVariableNameSniff extends AbstractVariableSniff
             $suggestedName = SnakeCase::toSnakeCase($originalVarName);
             $error = 'Variable "%s" is not in valid snake case format (Suggested name: %s)';
             $data  = [$originalVarName, $suggestedName];
-            $phpcsFile->addError($error, $stackPtr, 'NotSnakeCase', $data);
+            $phpcsFile->addWarning($error, $stackPtr, 'NotSnakeCase', $data);
         }
     }
 
