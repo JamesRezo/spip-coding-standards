@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<ruleset name="SCS2">
+    <description>SPIP Coding Standard v2</description>
+
+    <rule ref="SCS1" />
+
+    <rule ref="PSR2.Methods.MethodDeclaration.Underscore" >
+        <severity>5</severity>
+    </rule>
+</ruleset>
