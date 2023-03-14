@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.0] - 20231-03-14
+
+### Added
+
+- `dev` keyword to prevent a "no-dev" installation (composer 2.4+)
+- `SCS2` SPIP Coding Standard Ruleset (SCS1+prevention prefixed with an underscore on method names)
+- `SPIP42` PHP8.0+ Compatibility Ruleset, including SCS2, for SPIP 4.2+
+
 ## [1.2.1] - 2021-08-25
 
 ### Changed

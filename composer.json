@@ -2,7 +2,7 @@
     "name": "spip/coding-standards",
     "description": "SPIP Coding Standards",
     "type": "phpcodesniffer-standard",
-    "keywords": ["spip", "phpcs"],
+    "keywords": ["spip", "phpcs", "dev"],
     "license": "MIT",
     "authors": [
         {
@@ -17,10 +17,10 @@
         "phpcompatibility/php-compatibility": "dev-develop"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.6"
     },
     "suggest" : {
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.7 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically."
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically."
     },
     "autoload": {
         "psr-4": {
@@ -35,6 +35,11 @@
     "extra": {
         "branch-alias": {
             "dev-main": "1.3.x-dev"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     }
 }

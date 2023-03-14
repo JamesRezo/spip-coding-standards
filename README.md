@@ -1,6 +1,6 @@
 # SPIP Standard Coding Rules for PHP_CodeSniffer
 
-This is a set of rules for [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) that checks for SPIP Coding Standard and PHP Compatibility for SPIP v4.0.
+This is a set of rules for [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) that checks for SPIP Coding Standard and PHP Compatibility for SPIP v4.0+.
 
 ## Installation
 
