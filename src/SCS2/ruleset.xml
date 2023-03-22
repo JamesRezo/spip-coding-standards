@@ -3,6 +3,7 @@
     <description>SPIP Coding Standard v2</description>
 
     <rule ref="SCS1" />
+    <rule ref="Squiz.Operators.ValidLogicalOperators" />
 
     <rule ref="PSR2.Methods.MethodDeclaration.Underscore" >
         <severity>5</severity>
