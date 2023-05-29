@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<ruleset name="SPIP41">
+<ruleset name="SPIP50">
     <description>Coding rules for SPIP 5.0</description>
 
     <rule ref="SCS2"/>
