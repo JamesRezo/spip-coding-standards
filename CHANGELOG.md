@@ -8,7 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.3.0] - 20231-03-14
+## [1.3.2] - 2023-12-02
+
+- replace `squizlabs/php_codesniffer` with `phpcsstandards/php_codesniffer` (#2)
+
+## [1.3.0] - 2023-03-14
 
 ### Added
 
