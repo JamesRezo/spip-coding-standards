@@ -41,5 +41,7 @@
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
-    }
+    },
+    "abandoned": "spip-league/easy-coding-standard",
+    "_comment": "See https://get.spip.net/composer/#spip-league/easy-coding-standard"
 }
